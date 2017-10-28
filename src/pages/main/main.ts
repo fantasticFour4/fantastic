@@ -25,6 +25,7 @@ let position;
  templateUrl: 'main.html',
 })
 export class MainPage {
+  splash = true
   @ViewChild('map') mapElement:ElementRef;
   map: any;
   constructor( private afAuth : AngularFireAuth, private toast: ToastController,
@@ -33,7 +34,7 @@ export class MainPage {
   userPosition;
   ionViewDidLoad() {
     this.initMap();    
-    // setTimeout(() => this.splash = false, 3000);    
+    setTimeout(() => this.splash = false, 3000);    
     //  this.findNani();
     console.log('ionViewDidLoad MainPage');
   }
