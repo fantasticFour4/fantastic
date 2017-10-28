@@ -32,7 +32,8 @@ export class MainPage {
   }
   userPosition;
   ionViewDidLoad() {
-    this.initMap();
+    this.initMap();    
+    // setTimeout(() => this.splash = false, 3000);    
     //  this.findNani();
     console.log('ionViewDidLoad MainPage');
   }
